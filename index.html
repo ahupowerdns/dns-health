@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<html>
+  <head>
+    <script src="ext/d3/d3.min.js"></script>
+    <style>
+      html {
+        font-family: "Arial", Verdana, sans-serif;
+      }
+      body {
+        background: white;
+        color: black;
+        max-width: 80em;
+        margin: 0.5em 1em;
+      }
+      label {
+        font-size: small;
+      }
+      th {
+        background: navy;
+        color: white;
+      }
+      td, th {
+        padding: 0.5em 1em;
+      }
+      tr:nth-child(even) { background: #eef }
+      tr:nth-child(odd)  { background: #fff }
+      tr:hover           { background: gold }
+      label {
+        cursor: pointer;
+      }
+      input[type="checkbox"] {
+        cursor: pointer;
+      }
+    </style>
+    <title>DNS Health</title>
+  </head>
+  <body>
+    <a href="https://github.com/ahuPowerDNS/dns-health"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+    <p>
+      Welcome to the DNS Health Viewer! Please see <a href="https://github.com/ahuPowerDNS/dns-health">GitHub</a> for what this is &amp; how to contribute.
+    </p>
+    <table width="75%"><tr><td>
+    <div id="selector"></div></td></tr></table>
+    <p id="main"></p>
+          <div id="table"></div>
+    <p></p>
+    <span id="json"></span>
+    <script src="dns-health.js"></script>
+
+  </body>
+</html>
+    
